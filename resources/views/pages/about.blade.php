@@ -4,9 +4,9 @@
     
     <section id="about_main">
       <div class="row container">
-        <h3 id="about_title">About the Center for Holistic Health Care</h3>
+        <h3 id="about_title" data-aos="fade-up">About the Center for Holistic Health Care</h3>
 
-        <div class="col s12 ">
+        <div class="col s12 " data-aos="fade-up">
           <div class="card horizontal">
             <div class="card-stacked">
               <div class="card-content">

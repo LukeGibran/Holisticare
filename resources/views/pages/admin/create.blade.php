@@ -1,11 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<style>
-  .ck-editor__editable_inline {
-      min-height: 300px;
-  }
-  </style>
+
 <section id="create_view">
         @include('includes.side')
     <div class="row">
@@ -58,7 +54,7 @@
 
                 <div class="col xl12 s12 left-align" style="margin-top: 3rem" >
                   <h5>Post Content:</h5>
-                  <textarea name="content" id="editor" value="{{old('content')}}" ></textarea>
+                  <textarea name="content" id="summary-ckeditor" value="{{old('content')}}" ></textarea>
                 </div>
 
                <input type="text" name="user_id" value="{{Auth::user()->id}}" hidden>
@@ -110,7 +106,12 @@
         });
 
     </script>
-    <script src="/js/ckEditor.js"></script>
-    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script> --}}
+  <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+  <script>
+         CKEDITOR.replace( 'summary-ckeditor', {
+        filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
+    });
+  </script>
 
 @endsection

@@ -64,9 +64,9 @@
     {{-- session alerts --}}
     @include('includes.messages')
     @if (count($posts) > 0)
-      @foreach ($posts as $post)
-      <div class="col xl4 m6 s12">
-        <div class="card">
+      @foreach ($posts as $key => $post)
+      <div class="col xl4 m6 s12" >
+        <div class="card" data-aos="fade-up" data-aos-delay="{{50 * $key}}">
           <div class="card-image">
           <img src="/storage/{{$post->image}}" width="300px" height="200px">
           <span class="card-title" id="cardTitle">{{substr($post->title,0,15)}}</span>

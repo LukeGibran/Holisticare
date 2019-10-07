@@ -4,15 +4,15 @@
     <!-- MAIN Section -->
     <section id="main">
       <div class="row container ">
-        <div class="col s6">
-          <h3>Center of Holistic Care</h3>
-          <blockquote>
+        <div  class="col s6">
+          <h3 data-aos="fade-up">Center of Holistic Care</h3>
+          <blockquote data-aos="fade-up" data-aos-delay="50">
             CHHC is oriented to the promotion of wellness through the use of
             natural food in the diet that derived from plants and herbs which
             are rich in nutrients, high in phytochemicals and free from toxic
             additives
           </blockquote>
-          <blockquote>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
             The Center for Holistic Health Care (CHHC) is an expression of care
             in building a Culture of Dialogue, Path to Peace in our society in
             line with Vision – Mission of Silsilah that promotes a style of life
@@ -164,7 +164,7 @@
     <section id="stories">
       <div class="row container">
         <div class="center-align">
-          <div class="card text-title">
+          <div class="card text-title" data-aos="fade-up">
             <div class="card-content">
               <h5>
                 DISCOVERING THE CENTER FOR HOLISTIC HEALTH CARE (CHHC) IN
@@ -175,11 +175,11 @@
           </div>
         </div>
 
-        <h5>
+        <h5 data-aos="fade-up">
           The CHHC is a new experience and service of Silsilah Dialogue Movement
         </h5>
 
-        <ul class="collection">
+        <ul class="collection" data-aos="fade-up">
           <li class="collection-item avatar">
             <i class="material-icons circle green">grade</i>
             <p>

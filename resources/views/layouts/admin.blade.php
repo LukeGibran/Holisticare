@@ -39,6 +39,11 @@ header, main, footer {
             @yield('content')
         </main>
     </div>
+    <script src="/js/aos.js">
+    </script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 <script src="{{ asset('js/app.js') }}" defer></script>
 

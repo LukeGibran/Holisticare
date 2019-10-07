@@ -4,15 +4,15 @@
 
     <section id="objecives_main">
       <div class="row container">
-        <h3>
+        <h3 data-aos="fade-up">
           Objectives
         </h3>
-        <h6 style="margin-bottom:1rem;">
+        <h6 style="margin-bottom:1rem;" data-aos="fade-up">
           The mnemonic E.A.R.T.H helps to remember the five basic objectives of
           the CHHC.They are:
         </h6>
         <ul class="collection">
-          <li class="collection-item avatar">
+          <li class="collection-item avatar" data-aos="fade-up" data-aos-delay="50">
             <i class="material-icons circle green">grade</i>
             <span class="title"><strong>Experience</strong></span>
 
@@ -24,7 +24,7 @@
               people with compassionate heart and skills.
             </p>
           </li>
-          <li class="collection-item avatar">
+          <li class="collection-item avatar" data-aos="fade-up" data-aos-delay="100">
             <i class="material-icons circle green">grade</i>
             <span class="title"><strong>Assist</strong></span>
             <p>
@@ -34,7 +34,7 @@
               other categories.
             </p>
           </li>
-          <li class="collection-item avatar">
+          <li class="collection-item avatar" data-aos="fade-up" data-aos-delay="150">
             <i class="material-icons circle green">grade</i>
             <span class="title"><strong>Research</strong></span>
 
@@ -45,7 +45,7 @@
               disseminate useful information.
             </p>
           </li>
-          <li class="collection-item avatar">
+          <li class="collection-item avatar" data-aos="fade-up" data-aos-delay="200">
             <i class="material-icons circle green">grade</i>
             <span class="title"><strong>Training</strong></span>
 
@@ -59,7 +59,7 @@
               therapy.
             </p>
           </li>
-          <li class="collection-item avatar">
+          <li class="collection-item avatar" data-aos="fade-up" data-aos-delay="250">
             <i class="material-icons circle green">grade</i>
             <span class="title"><strong>Harmony</strong></span>
 

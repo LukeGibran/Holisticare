@@ -17,7 +17,6 @@
                             <div class="card-title">
                                 {{$result->title}}
                             </div>
-                            {!! substr($result->content,0, 230).'...' !!}
                             </div>
                             <div class="card-action">
                             <a href="{{route('show', ['id' => $result->id])}}" class="green-text">Read More</a>

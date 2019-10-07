@@ -21,6 +21,7 @@ Route::get('/search', 'PagesController@search')->name('search');
 Route::get('/contact', 'ContactFormController@create');
 Route::post('/contact', 'ContactFormController@store')->name('contact.store');
 
+Route::post('ckeditor/image_upload', 'PostController@upload')->name('upload');
 
 Route::get('/about', function(){
     return view('pages.about');
