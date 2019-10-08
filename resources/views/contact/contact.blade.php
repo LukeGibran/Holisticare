@@ -8,7 +8,7 @@
         Contact Us
         </h3>
         @include('includes.messages')
-        <div class="col s8">
+        <div class="col xl8 m6 s12">
           <div class="card horizontal" data-aos="fade-up">
 
             <div class="card-stacked">
@@ -66,7 +66,7 @@
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col xl4 m6 s12">
           <div class="card horizontal" data-aos="fade-up">
               <div style="padding:1rem">
               <div class="address">

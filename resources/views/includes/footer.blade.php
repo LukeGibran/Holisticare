@@ -10,19 +10,19 @@
               <h5 class="white-text">Links</h5>
               <ul>
 
-                <li><a href="#" class="grey-text text-lighten-3">Home</a></li>
-                <li><a href="#" class="grey-text text-lighten-3">About Us</a></li>
+              <li><a href="/" class="grey-text text-lighten-3">Home</a></li>
+                <li><a href="/about" class="grey-text text-lighten-3">About Us</a></li>
                 <li>
-                  <a href="#" class="grey-text text-lighten-3">Objectives</a>
+                  <a href="/objectives" class="grey-text text-lighten-3">Objectives</a>
                 </li>
                 <li>
-                  <a href="#" class="grey-text text-lighten-3">Holistic information</a>
+                  <a href="{{route('page', ['category' => 'holistic'])}}" class="grey-text text-lighten-3">Holistic information</a>
                 </li>
                 <li>
-                  <a href="#" class="grey-text text-lighten-3">Testimonies</a>
+                  <a href="{{route('page', ['category' => 'testimony'])}}" class="grey-text text-lighten-3">Testimonies</a>
                 </li>
                 <li>
-                  <a href="#" class="grey-text text-lighten-3">Contact Us</a>
+                  <a href="/contact" class="grey-text text-lighten-3">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -31,8 +31,8 @@
         <div class="footer-copyright grey darken-4">
           <div class="container">
           © 
-          Copyright 2017 | holisticare.info | All Right Reserved
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          Copyright 2019 | holisticare.info | All Right Reserved
+          <a class="grey-text text-lighten-4 right" href="#!">Holisticare 2019</a>
           </div>
         </div>
       </footer>

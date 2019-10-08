@@ -1,3 +1,4 @@
+{{-- For ADMIN USER --}}
 <ul id="slide-out" class="sidenav sidenav-fixed">
     <li><div class="user-view ">
       <div class="background">
@@ -28,3 +29,7 @@
 
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons green-text">menu</i></a>
+  {{-- END OF ADMIN --}}
+
+
+  

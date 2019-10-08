@@ -3,8 +3,8 @@
 .nav-link {
     color: #212121;
     &.admin {
-        color: #ffffff;
-        background: #66bb6a;
+        color: #ffffff !important;
+        background: #66bb6a !important;
     }
 }
 
@@ -87,7 +87,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 // }
 
 #main {
-    height: calc(100vh - 64px);
+    min-height: calc(100vh - 64px);
     background: url('/storage/img/home_banner.jpg') center no-repeat;
 }
 

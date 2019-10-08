@@ -22,6 +22,7 @@
 </head>
 <body>
     <div id="app">
+        @include('includes.sidenav')
         @include('includes.nav')
 
         <main class="py-4">
@@ -36,5 +37,11 @@
 </body>
     @include('includes.footer')
 <script src="{{ asset('js/app.js') }}" defer></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var sidenav = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(sidenav, {});
+  });
+</script>
 
 </html>

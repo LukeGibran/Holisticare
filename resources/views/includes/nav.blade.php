@@ -31,6 +31,10 @@
        
                 </ul>
 
+                <ul id="nav-mobile" class="right show-on-medium-and-down">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons green-text">menu</i></a>
+                </ul>
+
         </div>
     </nav>
 
