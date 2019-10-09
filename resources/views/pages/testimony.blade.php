@@ -13,15 +13,17 @@
         <div class="col xl12">
         <div class="card horizontal" data-aos="fade-up">
           <div class="card-image">
-          <img class="image-layer" src="/storage/{{$testimony->image}}" style="height:300px !important; width: 400px"/>
+          <img class="image-layer" src="/storage/{{$testimony->image}}" style="min-height:100% !important; min-width: 200px"/>
           </div>
           <div class="card-stacked">
             <div class="card-content">
               <div class="card-title">
                 {{$testimony->title}}
               </div>
-              <p>
-                {!!substr($testimony->content,0,250).'...'!!}
+              <p class="">
+                <div class="hide-on-med-and-down">
+                    {!!substr($testimony->content,0,250).'...'!!}
+                </div>
               </p>
             </div>
             <div class="card-action">

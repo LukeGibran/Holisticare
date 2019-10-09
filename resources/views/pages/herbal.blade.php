@@ -9,7 +9,7 @@
         </h3>
         <div class="row">
           @foreach ($data as $herbal)
-          <div class="col xl4 m6 s12">
+          <div class="col xl4 m6 s12" data-aos="fade-up">
                     <div class="card">
                         <div class="card-image">
                         <img src="/storage/{{$herbal->image}}">

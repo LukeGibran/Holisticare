@@ -4,10 +4,6 @@
             <div class="col l6 s12">
               <h5 class="white-text"><img src="/storage/img/logo.png" alt="logo" class="nav-logo" />
               </h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
               <ul>
 
               <li><a href="/" class="grey-text text-lighten-3">Home</a></li>
@@ -25,6 +21,15 @@
                   <a href="/contact" class="grey-text text-lighten-3">Contact Us</a>
                 </li>
               </ul>
+
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <p class="grey-text text-lighten-4">HOLISTICARE BROCHURE 2018</p>
+
+                <a href="http://new.holisticare.info/wp-content/uploads/2018/07/Holisticare-Brochure-2018.pdf" target="_blank">
+                  <img src="/storage/img/1.jpg" alt="brochure" height="230px" width="300px">
+                </a>
+              
             </div>
           </div>
         </div>

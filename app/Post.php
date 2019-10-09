@@ -13,7 +13,7 @@ class Post extends Model
     }
 
     public function scopeOrganize($query){
-       return $query->orderBy('id', 'desc')->paginate(9);
+       return $query->orderBy('id', 'desc')->paginate(6);
 
     }
 

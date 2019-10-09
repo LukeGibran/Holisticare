@@ -10,7 +10,7 @@
                         <div class="col xl12">
                         <div class="card horizontal" data-aos="fade-up">
                         <div class="card-image">
-                        <img class="image-layer" src="/storage/{{$result->image}}" height="280px" style="width: 300px !important"/>
+                        <img class="image-layer" src="/storage/{{$result->image}}"  style="height:100%;min-height:230px;width: 300px !important"/>
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">

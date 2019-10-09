@@ -21,8 +21,8 @@
           <li><a class="waves-effect" href="/">Home</a></li>
           <li><a href="/about" class="waves-effect">About Us</a></li>
           <li><a href="/objectives" class="waves-effect">Objectives</a></li>
-          <li><a href="/holistic" class="waves-effect">Holistic Information</a></li>
-          <li><a href="/testimonies" class="waves-effect">Testimonies</a></li>
+          <li><a href="{{route('page', ['category' => 'holistic'])}}" class="waves-effect">Holistic Information</a></li>
+          <li><a href="{{route('page', ['category' => 'testimony'])}}" class="waves-effect">Testimonies</a></li>
           <li><a href="/contact" class="waves-effect">Contact Us</a></li>
           @auth
           <li><a href="/admin" class="nav-link admin" style="">ADMIN</a></li>

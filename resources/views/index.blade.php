@@ -42,7 +42,7 @@
       <div class="col xl12 " data-aos="fade-up" data-aos-delay="{{$key * 50}}">
       <div class="card horizontal" >
         <div class="card-image">
-        <img class="image-layer" src="/storage/{{$news->image}}" height="230px" width="300px"/>
+        <img class="image-layer" src="/storage/{{$news->image}}" style="min-height:100%"  width="300px"/>
 
         </div>
         <div class="card-stacked">

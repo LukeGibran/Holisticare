@@ -5,6 +5,10 @@
   p, li{
     font-size: 20px;
   }
+
+  img{
+    max-width: 100%;
+  }
 </style>
 <section id="holistic_view">
         <div class="parallax-container">
@@ -12,14 +16,15 @@
         </div>
 
         <div class="row container" id="contents">
-            <div class="col xl3" id="content_img">
+            <div class="col xl3 m4 s12" id="content_img">
                 <img
                   class="materialboxed"
                     src="/storage/{{$data->image}}"
                     id="view_image"
                   height="200px" width="200px"/>
             </div>
-            <div class="col xl9" id="content_title">
+            <div class="col s12 hide-on-med-and-up" id="Block" style="height:100px;"></div>
+            <div class="col xl8 m8 s12" id="content_title">
             <h4>{{$data->title}}</h4>
             </div>
 

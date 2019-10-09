@@ -2,7 +2,7 @@
 <nav class="white dark-text " >
  
         <div class="nav-wrapper " style="padding: 0 2rem;">
-            <img src="/storage/img/logo.png" alt="logo" class="nav-logo" />
+            <img src="/storage/img/logo.png" alt="logo" class="nav-logo " />
 
 
                 <!-- Right Side Of Navbar -->

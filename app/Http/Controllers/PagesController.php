@@ -21,6 +21,8 @@ class PagesController extends Controller
 
         if($category == 'herbal'){
             $paginate = 4;
+        }else if($category == 'testimony'){
+            $paginate = 5;
         }
 
         $data = Post::where('category', '=',$category)->orderBy('id', 'desc')->paginate($paginate);
