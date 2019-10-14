@@ -4,6 +4,7 @@
     <!-- MAIN Section -->
     <section id="main">
       <div class="row container ">
+
         <div  class="col s6">
           <h3 data-aos="fade-up">Center of Holistic Care</h3>
           <blockquote data-aos="fade-up" data-aos-delay="50">
@@ -31,7 +32,7 @@
         <i class="small material-icons green-text darken-1">library_books</i>
         <h4>Holistic News</h4>
         <span class="divider"></span>
-    @if (count($news) < 0)
+    @if (count($news) == 0)
         <div class="center-align">
         <h4>No post yet</h4>
         </div>

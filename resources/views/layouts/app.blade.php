@@ -41,7 +41,15 @@
       document.addEventListener('DOMContentLoaded', function() {
     var sidenav = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(sidenav, {});
+    
+    var dropdownTrigger = document.querySelector('.dropdown-trigger');
+    var dropdownInstance = M.Dropdown.init(dropdownTrigger, { hover: false});
+
+    var dropdownTrigger2 = document.querySelector('.dropdown-trigger2');
+    var dropdownInstance2 = M.Dropdown.init(dropdownTrigger2, { hover: false});
   });
+  
 </script>
+
 
 </html>

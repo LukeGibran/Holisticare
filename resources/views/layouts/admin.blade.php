@@ -46,5 +46,21 @@ header, main, footer {
     </script>
 </body>
 <script src="{{ asset('js/app.js') }}" defer></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+    var dropdownTrigger2 = document.querySelector('.dropdown-trigger2');
+    var dropdownInstance2 = M.Dropdown.init(dropdownTrigger2, { hover: false});
+  });
+</script>
+<script>
+    const alert = document.querySelector('#alert');
+
+    if(alert){
+      setTimeout(() => {
+       alert.style.display = 'none';
+      }, 3550)
+    }
+</script>
 
 </html>

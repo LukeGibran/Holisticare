@@ -32,11 +32,12 @@
                                 <li style="padding: 0 1rem">
                                     <div class="input-field">
                                         <select name="category">
-                                          <option value="" disabled selected>All Category</option>
-                                          <option value="news">Holistic News</option>
-                                          <option value="holistic">Holistic Information</option>
-                                          <option value="testimony">Testimony</option>
-                                          <option value="herbal">Herbal Tea</option>
+                                            <option value="" disabled selected>All Category</option>
+
+                                          @foreach ($categories as $categories)
+                                        <option value={{$categories->type}}>{{ucfirst($categories->type)}}</option>
+                                          @endforeach
+                                          
                                         </select>
                                        
                                       </div>
@@ -54,7 +55,7 @@
 
           <div class="col s6 offset-s3 center-align">
             <h3 style="margin-bottom:1px;">All Posts</h3>
-            <h6 style="margin:0">({{$category}})</h6>
+            <h6 style="margin:0">({{$category }})</h6>
           </div>
         </div>
     <div class="row center-align" style="padding: 0 2rem">
@@ -104,15 +105,6 @@
         var selectInstances = M.FormSelect.init(select, {});
       });
     </script>
-    <script>
-     const alert = document.querySelector('#alert');
 
-     if(alert){
-       setTimeout(() => {
-        alert.style.display = 'none';
-        console.log('alert is gone');
-       }, 3550)
-     }
-    </script>
 
 @endsection

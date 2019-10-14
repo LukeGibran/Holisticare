@@ -15,7 +15,12 @@
     <li><a href="/about" class="waves-effect">About Us</a></li>
     <li><a href="/objectives" class="waves-effect">Objectives</a></li>
     <li><a href="{{route('page', ['category' => 'holistic'])}}" class="waves-effect">Holistic Information</a></li>
-    <li><a href="{{route('page', ['category' => 'testimony'])}}" class="waves-effect">Testimonies</a></li>
+    <li><a class="dropdown-trigger2" href="#!" data-target="dropdown2">Categories<i class="material-icons right">arrow_drop_down</i></a></li>
+    <ul id='dropdown2' class='dropdown-content'>
+        @foreach (session('categories') as $category)
+        <li><a href="{{route('page', ['category' => $category->type])}}" class="nav-link">{{ucfirst($category->type)}}</a></li>
+        @endforeach
+    </ul>
     <li><a href="/contact" class="waves-effect">Contact Us</a></li>
     <li><a class="dropdown-item" href="{{ route('logout') }}"
         onclick="event.preventDefault();
@@ -28,7 +33,10 @@
      </form></li>
 
   </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons green-text">menu</i></a>
+  <div class="col xl12 right-align hide-on-large-only" style="padding:1rem">
+    <a href="#" data-target="slide-out" class="sidenav-trigger " ><i class="material-icons green-text">menu</i></a>
+
+  </div>
   {{-- END OF ADMIN --}}
 
 

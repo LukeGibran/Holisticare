@@ -4,6 +4,7 @@
     
     <section id="about_main">
       <div class="row container">
+  
         <h3 id="about_title" data-aos="fade-up">About the Center for Holistic Health Care</h3>
 
         <div class="col s12 " data-aos="fade-up">

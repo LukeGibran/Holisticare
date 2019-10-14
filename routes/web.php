@@ -21,6 +21,11 @@ Route::get('/search', 'PagesController@search')->name('search');
 Route::get('/contact', 'ContactFormController@create');
 Route::post('/contact', 'ContactFormController@store')->name('contact.store');
 
+// For Category
+Route::post('/category/store', 'CategoryController@store')->name('category.store');
+Route::get('/category/delete/{id}', 'CategoryController@delete')->name('category.delete');
+Route::delete('/category/destroy/{id}', 'CategoryController@destroy')->name('category.destroy');
+
 Route::post('ckeditor/image_upload', 'PostController@upload')->name('upload');
 
 Route::get('/about', function(){

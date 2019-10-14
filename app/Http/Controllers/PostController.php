@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -47,7 +48,11 @@ class PostController extends Controller
 
         }
 
-        return view('pages.admin.index', ['posts' => $posts])->with('category', $this->determineCategory($category));
+        $categories = Category::all();
+
+        return view('pages.admin.index', compact('posts', 'categories'))->with('category', $this->determineCategory($category));
+
+       
     }
 
     /**
@@ -57,7 +62,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.create');
+        $categories = Category::all();
+        return view('pages.admin.create', compact('categories'));
     }
 
     /**
@@ -93,7 +99,9 @@ class PostController extends Controller
     public function edit($admin)
     {
         $post = Post::findOrFail($admin);
-        return view('pages.admin.edit',(['post' => $post]));
+        $categories = Category::all();
+
+        return view('pages.admin.edit',compact('post', 'categories'));
     }
 
     /**
@@ -168,10 +176,10 @@ class PostController extends Controller
                 $category = 'Herbal Tea';
                 break;
             default:
-                $category = 'All category';
+                $category = ucfirst($category);
         }
 
-        return $category;
+        return $category ? $category : 'All Category';
     }
 
     public function upload(Request $request)

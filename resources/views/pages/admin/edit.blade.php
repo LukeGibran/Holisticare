@@ -10,10 +10,10 @@
               @include('includes.side')
           <div class="row">
       
-              <div class="col s6 offset-s3 center-align">
+              <div class="col s6  offset-s3 center-align">
               <h3>Edit Post </h3>
-              </div>
-              
+              <a href="{{url()->previous()}}" class="btn orange darken-1"> Back <i class="material-icons left" style="margin:0;width:20px">arrow_backward</i></a>
+
           </div>
       
           <div class="row center-align" style="padding: 0 1rem">
@@ -28,11 +28,10 @@
       
                       <div class="input-field col xl4 s12">
                         <select name="category">
-                          <option value="" disabled >Choose your option</option>
-                          <option value="news" {{$post->category == 'news' ? 'selected' : ''}}>Holistic News</option>
-                          <option value="holistic"  {{$post->category == 'holistic' ? 'selected' : ''}}>Holistic Information</option>
-                          <option value="testimony"  {{$post->category == 'testimony' ? 'selected' : ''}}>Testimony</option>
-                          <option value="herbal"  {{$post->category == 'herbal' ? 'selected' : ''}}>Herbal Tea</option>
+                            @foreach ($categories as $categories)
+                            <option value={{$categories->type}} {{$categories->type == $post->category ? 'selected' : ''}}>{{ucfirst($categories->type)}}</option>
+                              @endforeach
+      
                         </select>
                         <label>Post Category</label>
                       </div>
