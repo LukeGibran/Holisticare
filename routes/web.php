@@ -26,8 +26,21 @@ Route::post('/category/store', 'CategoryController@store')->name('category.store
 Route::get('/category/delete/{id}', 'CategoryController@delete')->name('category.delete');
 Route::delete('/category/destroy/{id}', 'CategoryController@destroy')->name('category.destroy');
 
+// For User
+Route::get('/user/{id}/edit', 'UserController@edit')->name('user.edit');
+Route::post('/user/{id}', 'UserController@update')->name('user.update');
+
+
+// For Ckeditor
 Route::post('ckeditor/image_upload', 'PostController@upload')->name('upload');
 
+
+
+Route::resource('admin', 'PostController');
+Auth::routes(['register' => false]);
+
+
+// Static pages
 Route::get('/about', function(){
     return view('pages.about');
 });
@@ -35,10 +48,3 @@ Route::get('/objectives', function(){
     return view('pages.objectives');
 });
 
-
-Route::resource('admin', 'PostController');
-Auth::routes(['register' => false]);
-
-Route::get('/viewEmail', function(){
-    return view('emails.contact.contact');
-});

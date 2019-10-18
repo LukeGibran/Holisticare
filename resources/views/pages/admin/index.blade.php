@@ -24,7 +24,7 @@
 
                                 <li>
                                         <div class="input-field" style="padding: 5px 8px" >
-                                          <input name="search" id="search" type="search" style="background:#e0e0e0 !important;height:50px !important;" name="search" >
+                                          <input name="search" id="search" type="search" style="background:#e0e0e0 !important;height:50px !important;" name="search" autocomplete="off" >
                                           <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
                                           <i class="material-icons">close</i>
                                         </div>

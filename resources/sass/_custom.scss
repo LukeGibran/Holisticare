@@ -247,3 +247,24 @@ textarea.materialize-textarea:focus:not([readonly]) {
     display: none;
     width: 100%;
 }
+
+#user_admin {
+    #user_title {
+        margin-bottom: 6rem;
+    }
+    .space {
+        height: 100px;
+        padding-left: 15rem;
+
+        span {
+            font-size: 18px;
+        }
+    }
+    #about_image {
+        position: absolute;
+        top: -6rem;
+        left: 2rem;
+        border-radius: 50%;
+        border: 5px solid #66bb6a;
+    }
+}

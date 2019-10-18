@@ -9393,6 +9393,27 @@ textarea.materialize-textarea:focus:not([readonly]) {
   width: 100%;
 }
 
+#user_admin #user_title {
+  margin-bottom: 6rem;
+}
+
+#user_admin .space {
+  height: 100px;
+  padding-left: 15rem;
+}
+
+#user_admin .space span {
+  font-size: 18px;
+}
+
+#user_admin #about_image {
+  position: absolute;
+  top: -6rem;
+  left: 2rem;
+  border-radius: 50%;
+  border: 5px solid #66bb6a;
+}
+
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;

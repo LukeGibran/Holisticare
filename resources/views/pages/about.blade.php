@@ -26,6 +26,8 @@
                     </span>
                   </h5>
                 </div>
+
+                <div class="hide-on-med-and-up col s12" style="height:100px;"></div>
                 <p>
                   The Center for Holistic Health Care (CHHC) in Harmony Village
                   was inaugurated on May 20, 2010. “ We owe great thanks to

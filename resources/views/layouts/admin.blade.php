@@ -59,7 +59,7 @@ header, main, footer {
     if(alert){
       setTimeout(() => {
        alert.style.display = 'none';
-      }, 3550)
+      }, 6000)
     }
 </script>
 

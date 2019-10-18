@@ -4,9 +4,9 @@
       <div class="background">
         <img src="/storage/img/home_banner.jpg" height="180px" width="300px">
       </div>
-      <a href="#user"><img class="circle" src="/storage/img/user.png"></a>
-      <a href="#name"><span class="black-text name">{{Auth::user()->name}}</span></a>
-    <a href="#email"><span class="black-text email">{{Auth::user()->email}}</span></a>
+    <a href="{{route('user.edit', ['id' => Auth::user()->id])}}"><img class="circle" src="{{Auth::user()->image == null ? '/storage/img/user.png' : '/storage/uploads/'.Auth::user()->image}}"></a>
+      <a href="{{route('user.edit', ['id' => Auth::user()->id])}}"><span class="black-text name">{{Auth::user()->name}}</span></a>
+    <a href="{{route('user.edit', ['id' => Auth::user()->id])}}"><span class="black-text email">{{Auth::user()->email}}</span></a>
     </div></li>
     <li><a href="/admin"><i class="material-icons">home</i>All Posts</a></li>
     <li><a href="/admin/create"><i class="material-icons">add_circle</i>Create Post</a></li>
