@@ -48,8 +48,6 @@
         var instances = M.Parallax.init(elems, { responsiveThreshold: 1 });
       });
     </script>
-    <script>
-      AOS.init();
-    </script>
+
   </body>
 </html>
