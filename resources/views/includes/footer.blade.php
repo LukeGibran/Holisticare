@@ -27,7 +27,7 @@
                 <p class="grey-text text-lighten-4">HOLISTICARE BROCHURE 2018</p>
 
                 <a href="http://new.holisticare.info/wp-content/uploads/2018/07/Holisticare-Brochure-2018.pdf" target="_blank">
-                  <img src="/storage/img/1.jpg" alt="brochure" height="230px" width="300px">
+                  <img src="/storage/img/1.jpg" alt="brochure" height="230px" width="280px" >
                 </a>
               
             </div>

@@ -8,7 +8,7 @@
 <nav class="white dark-text " >
 
         <div class="nav-wrapper " style="padding: 0 2rem;">
-            <img src="/storage/img/logo.png" alt="logo" class="nav-logo " />
+            <img src="/storage/img/logo.png" alt="logo" class="nav-logo hide-on-small-only" />
 
 
                 <!-- Right Side Of Navbar -->
@@ -40,7 +40,7 @@
                 </ul>
 
                 <ul id="nav-mobile" class="right show-on-medium-and-down">
-                    <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons green-text">menu</i></a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="large material-icons green-text" style="font-size:30px;">menu</i></a>
                 </ul>
 
         </div>

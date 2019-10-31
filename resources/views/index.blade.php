@@ -5,7 +5,7 @@
     <section id="main">
       <div class="row container ">
 
-        <div  class="col s6">
+        <div  class="col xl6 s12">
           <h3 data-aos="fade-up">Center of Holistic Care</h3>
           <blockquote data-aos="fade-up" data-aos-delay="50">
             CHHC is oriented to the promotion of wellness through the use of
@@ -43,7 +43,7 @@
       <div class="col xl12 " data-aos="fade-up" data-aos-delay="{{$key * 50}}">
       <div class="card horizontal" >
         <div class="card-image">
-        <img class="image-layer" src="/storage/{{$news->image}}" style="min-height:100%"  width="300px"/>
+        <img class="image-layer hide-on-small-only" src="{{url('storage/'.$news->image)}}" style="min-height:100%"  width="300px"/>
 
         </div>
         <div class="card-stacked">
@@ -157,8 +157,7 @@
     <div class="parallax-container">
       <div class="parallax"><img src="/storage/img/parallax.jpg" /></div>
       <div class="center-align parallax-text">
-        <i class="material-icons medium">view_headline</i>
-
+        <i class="material-icons medium hide-on-small-only">view_headline</i>
         <h2>Stories of Life from soil to soil</h2>
       </div>
     </div>

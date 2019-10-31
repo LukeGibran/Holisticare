@@ -203,7 +203,7 @@ class PostController extends Controller
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
             $url = asset('storage/uploads/'.$filenametostore); 
             $msg = 'Image successfully uploaded'; 
-            $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+            $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url')</script>";
              
             // Render HTML output 
             @header('Content-type: text/html; charset=utf-8'); 

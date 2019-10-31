@@ -20,7 +20,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="prevent-scroll">
+    <div class="loader">
+        <div class="lds-dual-ring"></div>
+    </div>
     <div id="app">
         @include('includes.sidenav')
         @include('includes.nav')
@@ -49,6 +52,27 @@
     var dropdownInstance2 = M.Dropdown.init(dropdownTrigger2, { hover: false});
   });
   
+</script>
+
+<script>
+function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+  document.querySelector('body').classList.remove('prevent-scroll');
+}
+
+onReady(function() {
+  setVisible('.loader', false);
+});
+
 </script>
 
 

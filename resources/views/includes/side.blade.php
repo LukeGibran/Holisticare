@@ -1,5 +1,5 @@
 {{-- For ADMIN USER --}}
-<ul id="slide-out" class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav ">
     <li><div class="user-view ">
       <div class="background">
         <img src="/storage/img/home_banner.jpg" height="180px" width="300px">

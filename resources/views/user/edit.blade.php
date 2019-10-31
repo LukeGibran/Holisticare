@@ -28,14 +28,17 @@
 
                         style="min-height:200px;"
                       />
-                      <div class="space">
-                        <h4 class="image_description">
-                          {{Auth::user()->name}}
+                      <div class="col s12 " id="Block" style="height:100px;"></div>
+
+                        <div class="card-title" style="margin-bottom:2rem">
+                          <h5>
+                              {{Auth::user()->name}}
+
+                          </h5>
                           <span style="display:block">
                           ({{Auth::user()->email}})
                           </span>
-                        </h4>
-                      </div>
+                        </div>
                       <div class="hide-on-med-and-up col s12" style="height:40px;"></div>
                     <form action="{{route('user.update', ['id' => Auth::user()->id])}}" method="post" id="form" enctype="multipart/form-data">
                           @csrf

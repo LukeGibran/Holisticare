@@ -149,7 +149,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
     padding: 2rem 0;
 
     .parallax-text {
-        padding-left: 5rem;
         z-index: 1;
         font-weight: 300;
         color: #3d4043;
@@ -267,4 +266,52 @@ textarea.materialize-textarea:focus:not([readonly]) {
         border-radius: 50%;
         border: 5px solid #66bb6a;
     }
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.loader .lds-dual-ring {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #66bb6a;
+    border-color: #66bb6a transparent #66bb6a transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.prevent-scroll {
+    overflow: hidden;
+    height: 100%;
 }
